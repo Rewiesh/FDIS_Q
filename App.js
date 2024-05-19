@@ -16,14 +16,18 @@ const App = () => {
 
   if (isLoading) {
     return (
-      <NativeBaseProvider theme={FdisTheme}>
-        <SplashScreen />
+      // <NativeBaseProvider theme={FdisTheme}>
+    <NativeBaseProvider>
+
+        {/* <SplashScreen /> */}
+
       </NativeBaseProvider>
     );
   }
 
   return (
-    <NativeBaseProvider theme={FdisTheme}>
+    // <NativeBaseProvider theme={FdisTheme}>
+    <NativeBaseProvider>
       <View style={{flex: 1}}>
         {/* <FdisQuality /> */}
       </View>
